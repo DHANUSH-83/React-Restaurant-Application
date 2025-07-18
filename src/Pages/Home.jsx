@@ -31,20 +31,22 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       {/* Carousel */}
-      <Carousel interval={2000} fade >
-        {Homeimg.map((item) => (
-          <Carousel.Item key={item.id}>
-            <img className='d-block w-100 fluid mx-auto '
-              src={item.image}
-              alt={item.title}
-            />
-            <Carousel.Caption>
-              <Button className='button-carousel' onClick={()=>navigate('/product')}>Explore Now </Button>
-            </Carousel.Caption>
-            
-          </Carousel.Item>
-        ))}
-      </Carousel>
+     <Carousel interval={2000} fade>
+  {Homeimg.map((item) => (
+    <Carousel.Item key={item.id}>
+      <img
+        className='d-block w-100 carousel-img'
+        src={item.image}
+        alt={item.title}
+      />
+      <Carousel.Caption>
+        <Button className='button-carousel' onClick={() => navigate('/product')}>
+          Explore Now
+        </Button>
+      </Carousel.Caption>
+    </Carousel.Item>
+  ))}
+</Carousel>
 
       <h1 className='text-center mt-4 mb-4   fs-md-2 fs-lg-1 responsive-heading' style={{ fontFamily: 'Times New Roman, Times, serif',fontSize:'60px' }}>Browse Our Menus</h1>
 

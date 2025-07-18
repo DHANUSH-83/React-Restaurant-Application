@@ -27,6 +27,20 @@
     }
 }
 
+.carousel-img {
+  height: 500px; // default for larger screens
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: 250px; // smaller height for small screens
+  }
+
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+
 .Menus-card {
     border: none;
     background: none;
