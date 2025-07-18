@@ -27,20 +27,6 @@
     }
 }
 
-.carousel-img {
-  height: 500px; // default for larger screens
-  object-fit: cover;
-
-  @media (max-width: 768px) {
-    height: 250px; // smaller height for small screens
-  }
-
-  @media (max-width: 576px) {
-    height: 200px;
-  }
-}
-
-
 .Menus-card {
     border: none;
     background: none;
@@ -64,4 +50,16 @@
     .responsive-heading{
         font-size:32px !important;
     }
+}
+
+@media(max-width: 576px) {
+  .responsive-carousel {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  .responsive-carousel img {
+    height: 200px;
+    object-fit: cover;
+  }
 }

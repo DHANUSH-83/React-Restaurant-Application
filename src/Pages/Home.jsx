@@ -15,7 +15,7 @@ const Home = () => {
     try {
       const res = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php');
       const data = await res.json();
-      setCategories(data.categories.slice(0,12));
+      setCategories(data.categories.slice(0, 12));
     } catch (err) {
       console.error("Error fetching categories:", err);
     }
@@ -31,56 +31,56 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       {/* Carousel */}
-     <Carousel interval={2000} fade>
-  {Homeimg.map((item) => (
-    <Carousel.Item key={item.id}>
-      <img
-        className='d-block w-100 carousel-img'
-        src={item.image}
-        alt={item.title}
-      />
-      <Carousel.Caption>
-        <Button className='button-carousel' onClick={() => navigate('/product')}>
-          Explore Now
-        </Button>
-      </Carousel.Caption>
-    </Carousel.Item>
-  ))}
-</Carousel>
-
-      <h1 className='text-center mt-4 mb-4   fs-md-2 fs-lg-1 responsive-heading' style={{ fontFamily: 'Times New Roman, Times, serif',fontSize:'60px' }}>Browse Our Menus</h1>
-
-
-       <Container className="mb-5">
-      <div className="d-flex overflow-auto gap-3 pb-3">
-        {Categories.map((category) => (
-          <div
-            key={category.idCategory}
-            className="flex-shrink-0"
-            style={{ minWidth: '200px' }} // Adjust width as needed
-          >
-            <Card
-              className="Menus-card shadow-none"
-              onClick={() =>
-                navigate('/product', {
-                  state: { category: category.strCategory },
-                })
-              }
-            >
-              <Card.Img
-                variant="top"
-                src={category.strCategoryThumb}
-                className="w-100"
-                style={{ height: '150px', objectFit: 'contain' }}
-              />
-              <Card.Body className="text-center">
-                <Card.Title>{category.strCategory}</Card.Title>
-              </Card.Body>
-            </Card>
-          </div>
+      <Carousel className='responsive-carousel' interval={2000} fade>
+        {Homeimg.map((item) => (
+          <Carousel.Item key={item.id}>
+            <img
+              className='d-block w-100 carousel-img'
+              src={item.image}
+              alt={item.title}
+            />
+            <Carousel.Caption>
+              <Button className='button-carousel' onClick={() => navigate('/product')}>
+                Explore Now
+              </Button>
+            </Carousel.Caption>
+          </Carousel.Item>
         ))}
-      </div>
-    </Container>
+      </Carousel>
+
+      <h1 className='text-center mt-4 mb-4   fs-md-2 fs-lg-1 responsive-heading' style={{ fontFamily: 'Times New Roman, Times, serif', fontSize: '60px' }}>Browse Our Menus</h1>
+
+
+      <Container className="mb-5">
+        <div className="d-flex overflow-auto gap-3 pb-3">
+          {Categories.map((category) => (
+            <div
+              key={category.idCategory}
+              className="flex-shrink-0"
+              style={{ minWidth: '200px' }} // Adjust width as needed
+            >
+              <Card
+                className="Menus-card shadow-none"
+                onClick={() =>
+                  navigate('/product', {
+                    state: { category: category.strCategory },
+                  })
+                }
+              >
+                <Card.Img
+                  variant="top"
+                  src={category.strCategoryThumb}
+                  className="w-100"
+                  style={{ height: '150px', objectFit: 'contain' }}
+                />
+                <Card.Body className="text-center">
+                  <Card.Title>{category.strCategory}</Card.Title>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+      </Container>
 
 
       <div className='bg-light  fluid'>
@@ -106,7 +106,7 @@ const Home = () => {
                   <h1 className=" py-3 text-start" style={{ fontFamily: 'Times' }}>
                     {item.title.split(' ').slice(0, 3).join(' ')} <br />
                     {item.title.split(' ').slice(3).join(' ')}
-                    
+
                   </h1>
                   <p className="fs-5  text-start ">{item.des1}</p>
                   <p className="fs-6 text-muted text-start">{item.des2}</p>
