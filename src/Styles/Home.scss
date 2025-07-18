@@ -9,9 +9,9 @@
 
         .carousel-caption {
             .button-carousel {
-                background-color: orange;
+               
                 border: none;
-                width: 200px;
+                width: 150px;
                 border-radius: 20px;
                 font-weight: bolder;
                 font-size: 20px;
@@ -19,10 +19,6 @@
                 transition: .6s ease-in-out;
             }
 
-            :hover {
-                background: #fff;
-                color: orange;
-            }
         }
     }
 }

@@ -37,7 +37,7 @@ const Home = () => {
             <Carousel.Item key={item.id}>
               <img className='d-block w-100 fluid mx-auto responsive-carousel' src={item.image} alt="" />
               <Carousel.Caption>
-                <Button className="button-carousel " onClick={() => navigate('/product')}>Explore</Button>
+                <button className="button-carousel " onClick={() => navigate('/product')}>Explore</button>
               </Carousel.Caption>
             </Carousel.Item>
           ))
@@ -67,7 +67,7 @@ const Home = () => {
                   variant="top"
                   src={category.strCategoryThumb}
                   className="w-100"
-                  style={{ height: '100px', objectFit: 'contain' }}
+                  style={{ height: '90px', objectFit: 'contain' }}
                 />
                 <Card.Body className="text-center">
                   <Card.Title>{category.strCategory}</Card.Title>
