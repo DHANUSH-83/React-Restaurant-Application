@@ -1,0 +1,70 @@
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 6px 14px;
+    border-radius: 20px;
+
+    &:hover {
+        color: orange;
+    }
+}
+
+.nav-link.active {
+    background-color: #ffc107;
+    border: 2px solid orange;
+    color: #fff !important;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+.button {
+  background-color: orange;
+  border: none;
+  width: 60%;
+  height:40px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Times';
+  transition: .5s ease-in-out;
+}
+.button:hover{
+  background-color: #fff;
+  color: orange;
+  border: 1px solid;
+}
+
+.responsive-fullwidth-modal {
+  @media (min-width: 992px) { 
+    max-width: 65% !important;
+
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+  @media (max-width: 991.98px) {
+    padding: 0 1rem;
+  }
+}
+

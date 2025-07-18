@@ -1,0 +1,47 @@
+.carousel {
+    border-radius: 20px;
+
+    &-item {
+        img {
+            height: 620px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            .button-carousel {
+                background-color: orange;
+                border: none;
+                width: 200px;
+                border-radius: 20px;
+                font-weight: bolder;
+                font-size: 20px;
+                font-family: 'times';
+                transition: .6s ease-in-out;
+            }
+
+            :hover {
+                background: #fff;
+                color: orange;
+            }
+        }
+    }
+}
+
+.Menus-card {
+    border: none;
+    background: none;
+
+    :hover {
+        transform: translateY(-5px);
+    }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+    max-width: 30px;
+}
