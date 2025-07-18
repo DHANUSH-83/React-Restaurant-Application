@@ -168,7 +168,7 @@ const Product = () => {
           <div className="text-center p-4">Loading...</div>
         ) : (() => {
           const Ingredients = [];
-          for (let i = 1; i <= 20; i++) {
+          for (let i = 1; i <= 10; i++) {
             const ingredient = selectedProduct[`strIngredient${i}`];
             if (ingredient && ingredient.trim() !== "") {
               Ingredients.push(ingredient);
