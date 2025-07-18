@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Styles/Home.scss'
+import '../Styles/Home.scss'
 import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';

@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../Context/CartProvider';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import Navbar from '../Components/Navbar/MyNavbar';
-import './Styles/Cart.scss'
+import '../Styles/Cart.scss'
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
