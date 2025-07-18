@@ -97,13 +97,13 @@ const Home = () => {
                   />
                 </Col>
 
-                <Col xs={12} md={6} className="text-center text-md-start mt-n3 px-5">
+                <Col xs={12} md={6} className="text-md-start mt-n3 px-5">
                   <h1 className=" py-3 text-start" style={{ fontFamily: 'Times' }}>
                     {item.title.split(' ').slice(0, 3).join(' ')} <br />
                     {item.title.split(' ').slice(3).join(' ')}
 
                   </h1>
-                  <p className="fs-5  text-start ">{item.des1}</p>
+                  <p className="fs-5  text-start text-muted ">{item.des1}</p>
                   <p className="fs-6 text-muted text-start">{item.des2}</p>
                   <button className="btn" style={{ border: '1px solid', borderRadius: '20px' }} onClick={() => navigate('/about')}>More About Us</button>
                 </Col>
