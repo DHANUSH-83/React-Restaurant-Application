@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.scss'
 import { useNavigate } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap';
-import { FaInstagram, FaFacebook, FaTwitter, FaPhone } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     const navigate = useNavigate()
