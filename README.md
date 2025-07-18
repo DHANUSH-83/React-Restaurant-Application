@@ -38,3 +38,5 @@ This project uses open-source libraries including:
  ---
  npm install - to install the needed dependencies
  npm run dev - to start a development server
+
+ 
