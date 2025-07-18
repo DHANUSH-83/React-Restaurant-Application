@@ -46,9 +46,8 @@ const Home = () => {
 
       <h1 className='text-center mt-4 mb-4   fs-md-2 fs-lg-1 responsive-heading' style={{ fontFamily: 'Times New Roman, Times, serif', fontSize: '60px' }}>Browse Our Menus</h1>
 
-
       <Container className="mb-5">
-        <div className="d-flex overflow-auto gap-3 pb-3">
+        <div className="d-flex overflow-auto gap-1 pb-3">
           {Categories.map((category) => (
             <div
               key={category.idCategory}

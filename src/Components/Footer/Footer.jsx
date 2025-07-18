@@ -12,15 +12,14 @@ const Footer = () => {
                 <Row className='d-flex justify-content-between text-center text-md-start'>
                     {/* Company Info */}
                     <Col xs={12} md={4} className='mb-4 mb-md-0'>
-                        <h1 className='mt-2'>MEALMATE</h1>
-                        <h4 className='py-3 fs-5' style={{ fontFamily: 'Times' }}>
+                        <h1 className='mt-2' style={{color:'orange',fontFamily:'Times',fontStyle:'italic',fontWeight:'bold'}}>Mario</h1>
+                        <h4 className='py-3 fs-5' style={{ fontFamily:'Times New Roman',fontStyle:'italic'}}>
                             In the new era of technology we look a in the future with certainty and pride to for our company.
                         </h4>
                     </Col>
-
                     {/* Navigation Buttons */}
                     <Col xs={12} md={4} className='mb-4 mb-md-0 my-auto'>
-                        <Row className='Footer-btn mt-2 d-flex flex-column align-items-center'>
+                        <Row className='Footer-btn mt-2 d-flex flex-column align-items-center '>
                             <button className="btn w-75" onClick={() => navigate('/')}>Home</button>
                             <button className="btn w-75" onClick={() => navigate('/about')}>About</button>
                             <button className="btn w-75" onClick={() => navigate('/product')}>Menu</button>
