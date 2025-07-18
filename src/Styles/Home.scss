@@ -45,3 +45,9 @@
     border-radius: 10px;
     max-width: 30px;
 }
+
+@media (max-width:576px){
+    .responsive-heading{
+        font-size:32px !important;
+    }
+}

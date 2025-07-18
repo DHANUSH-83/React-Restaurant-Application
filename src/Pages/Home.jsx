@@ -46,7 +46,7 @@ const Home = () => {
         ))}
       </Carousel>
 
-      <h1 className='text-center mt-4 mb-4 df-bold' style={{ fontFamily: 'Times New Roman, Times, serif', fontSize: '60px' }}>Browse Our Menus</h1>
+      <h1 className='text-center mt-4 mb-4   fs-md-2 fs-lg-1 responsive-heading' style={{ fontFamily: 'Times New Roman, Times, serif',fontSize:'60px' }}>Browse Our Menus</h1>
 
 
        <Container className="mb-5">
