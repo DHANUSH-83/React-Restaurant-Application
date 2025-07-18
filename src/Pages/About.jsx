@@ -30,7 +30,7 @@ const About = () => {
                       </Col>
       
                       <Col xs={12} md={6} className="text-md-start mt-n3 px-5">
-                        <h1 className=" py-3 text-start" style={{ fontFamily: 'Times' }}>
+                        <h1 className=" py-3 text-start fs-3" style={{ fontFamily: 'Times' }}>
                           {item.title.split(' ').slice(0, 3).join(' ')} <br />
                           {item.title.split(' ').slice(3).join(' ')}
       
