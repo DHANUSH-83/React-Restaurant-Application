@@ -17,7 +17,7 @@ const MyNavbar = () => {
   return (
     <Navbar expand="md" className="navbar tertiary sticky-top ">
       <Container fluid>
-        <Navbar.Brand as={Link} to="/" className="navbar-brand fs-md-2 fs-sm-4">
+        <Navbar.Brand as={Link} to="/" className="navbar-brand fs-md-3 fs-sm-4">
           <IoFastFoodSharp /> MEALMATE
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
