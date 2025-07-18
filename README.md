@@ -4,6 +4,7 @@
 
 MealMate is a modern and responsive online food ordering website built using **React**, **Bootstrap**, and **React Context API**. It allows users to browse meals, filter by category, search dishes, view detailed descriptions in a modal, and manage their cart – all in a smooth, user-friendly experience.
 
+
 ---
 
 ## 🚀 Features
