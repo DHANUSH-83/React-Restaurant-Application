@@ -128,12 +128,12 @@
 
 @media(max-width: 576px) {
   .responsive-carousel {
-    max-height: 200px;
+    max-height: 480px;
     overflow: hidden;
   }
 
-  .responsive-carousel img {
-    height: 200px;
+  .responsive-carousel{
+    height: 100px;
     object-fit: cover;
   }
 }
